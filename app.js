@@ -2,6 +2,8 @@ const dotenv = require('dotenv');
 const express = require('express');
 const path = require('path');
 const router = require('./routes/index');
+const bodyParser = require('body-parser');
+
 const { auth} = require('express-openid-connect');
 
 dotenv.config();
@@ -13,6 +15,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
+app.use(bodyParser.json());
 
 const config = {
   authRequired: false,
