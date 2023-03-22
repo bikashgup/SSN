@@ -1,0 +1,30 @@
+{
+  "name": "ssn",
+  "version": "1.0.0",
+  "description": "Simple Sample Social Network",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js",
+    "devStart": "nodemon app.js"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bikashgup/SSN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bikashgup/SSN/issues"
+  },
+  "homepage": "https://github.com/bikashgup/SSN#readme",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-openid-connect": "^2.12.0",
+    "nodemon": "^2.0.21",
+    "oidc-provider": "^8.1.1"
+  }
+}

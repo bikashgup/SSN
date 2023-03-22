@@ -1,0 +1,13 @@
+<%- include('partials/header') -%>
+
+<h1 class="text-4xl">SSN APP</h1>
+
+<% if (locals.isAuthenticated) { %>
+    <p>You are logged in. </p> 
+    <br> 
+<% } else { %>
+    <p>You are not logged in.</p> 
+    <p><a href="/login" class="underline">Login</a>.</p>
+<% } %>
+
+<%- include('partials/footer') -%>
